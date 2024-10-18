@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Claves</title>
+    <script>
+        function verificarClaves() {
+            // Solicitar las dos claves al usuario
+            var clave1 = prompt('Ingrese la primera clave:', "");
+            var clave2 = prompt('Ingrese la segunda clave:', "");
+
+            // Verificar si las claves son iguales
+            if (clave1 === clave2) {
+                document.getElementById("resultado").innerHTML = "Las claves son iguales.";
+            } else {
+                document.getElementById("resultado").innerHTML = "Las claves no son iguales.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Verificar Claves</h1>
+    <button onclick="verificarClaves()">Ingresar claves</button>
+    <div id="resultado" style="margin-top:20px;"></div>
+</body>
+</html>
